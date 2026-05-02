@@ -96,7 +96,7 @@ Based on PD2 **Season 13 — Betrayal**. Item data sourced from the [Project Dia
 | `pd2grail_v1` | Found item indices |
 | `pd2grail_dates_v1` | Found timestamps |
 | `pd2grail_data_v1` | Item data cache |
-| `pd2grail_data_version` | Cache version flag (current: 8) |
+| `pd2grail_data_version` | Cache version flag (current: 11) |
 
 ## Known issues
 
