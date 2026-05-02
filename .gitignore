@@ -1,10 +1,15 @@
-# Exclude everything except root files and grail-tracker/
+# Exclude everything in root except whitelisted items
 /*
+# Whitelist specific folders
 !/grail-tracker/
+# Whitelist specific files
 !/.gitignore
 !/README.md
 !/package.json
 !/build.js
+
+# Explicitly ignore built HTML files
+pd2-grail-tracker-v*.html
 
 # Node modules
 node_modules/
