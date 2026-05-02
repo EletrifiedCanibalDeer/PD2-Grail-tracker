@@ -2,6 +2,7 @@
 /*
 # Whitelist specific folders
 !/grail-tracker/
+!/screenshots/
 # Whitelist specific files
 !/.gitignore
 !/README.md

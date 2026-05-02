@@ -142,7 +142,6 @@ function toggleItem(id, card, sec){
     card.classList.remove('found');
     const dateEl = card.querySelector('.cd');
     if(dateEl) dateEl.remove();
-    showToast('Removed');
   } else {
     found.add(id);
     foundDates[id] = Date.now();
@@ -151,7 +150,6 @@ function toggleItem(id, card, sec){
     let dateEl = card.querySelector('.cd');
     if(!dateEl){ dateEl = document.createElement('div'); dateEl.className='cd'; card.appendChild(dateEl); }
     dateEl.textContent = formatDate(foundDates[id]);
-    showToast('Found ✓');
   }
   save();
   updateSectionStat(sec);

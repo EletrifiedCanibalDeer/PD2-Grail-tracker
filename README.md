@@ -2,6 +2,18 @@
 
 Track your Project Diablo 2 Holy Grail progress. Click items as you find them, watch the bars fill up, try not to cry when Tyrael's Might never drops.
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/Weapons.png" alt="Weapons Tab" width="45%">
+  <img src="screenshots/Armor.png" alt="Armor Tab" width="45%">
+</p>
+
+<p align="center">
+  <img src="screenshots/Runewords.png" alt="Runewords Tab" width="45%">
+  <img src="screenshots/Set items.png" alt="Set Items Tab" width="45%">
+</p>
+
 ## What's this?
 
 The "Holy Grail" is finding every unique item, set item, runeword, rune, charm, jewel and misc item in the game at least once. This tracker helps you keep track of what you've found and what's still out there mocking you.
