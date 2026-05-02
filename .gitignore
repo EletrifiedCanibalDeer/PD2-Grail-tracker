@@ -1,0 +1,37 @@
+# Exclude everything except root files and grail-tracker/
+/*
+!/grail-tracker/
+!/.gitignore
+!/README.md
+!/package.json
+!/build.js
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup

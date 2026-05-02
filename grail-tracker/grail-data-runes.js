@@ -1,0 +1,38 @@
+// ── RUNES ──────────────────────────────────
+
+window.RAW_DATA.push(
+  // ── RUNES ──────────────────────────────────
+  {t:'r',tab:'runes',c:'Runes',n:'El Rune',b:'El'},
+  {t:'r',tab:'runes',c:'Runes',n:'Eld Rune',b:'Eld'},
+  {t:'r',tab:'runes',c:'Runes',n:'Tir Rune',b:'Tir'},
+  {t:'r',tab:'runes',c:'Runes',n:'Nef Rune',b:'Nef'},
+  {t:'r',tab:'runes',c:'Runes',n:'Eth Rune',b:'Eth'},
+  {t:'r',tab:'runes',c:'Runes',n:'Ith Rune',b:'Ith'},
+  {t:'r',tab:'runes',c:'Runes',n:'Tal Rune',b:'Tal'},
+  {t:'r',tab:'runes',c:'Runes',n:'Ral Rune',b:'Ral'},
+  {t:'r',tab:'runes',c:'Runes',n:'Ort Rune',b:'Ort'},
+  {t:'r',tab:'runes',c:'Runes',n:'Thul Rune',b:'Thul'},
+  {t:'r',tab:'runes',c:'Runes',n:'Amn Rune',b:'Amn'},
+  {t:'r',tab:'runes',c:'Runes',n:'Sol Rune',b:'Sol'},
+  {t:'r',tab:'runes',c:'Runes',n:'Shael Rune',b:'Shael'},
+  {t:'r',tab:'runes',c:'Runes',n:'Dol Rune',b:'Dol'},
+  {t:'r',tab:'runes',c:'Runes',n:'Hel Rune',b:'Hel'},
+  {t:'r',tab:'runes',c:'Runes',n:'Io Rune',b:'Io'},
+  {t:'r',tab:'runes',c:'Runes',n:'Lum Rune',b:'Lum'},
+  {t:'r',tab:'runes',c:'Runes',n:'Ko Rune',b:'Ko'},
+  {t:'r',tab:'runes',c:'Runes',n:'Fal Rune',b:'Fal'},
+  {t:'r',tab:'runes',c:'Runes',n:'Lem Rune',b:'Lem'},
+  {t:'r',tab:'runes',c:'Runes',n:'Pul Rune',b:'Pul'},
+  {t:'r',tab:'runes',c:'Runes',n:'Um Rune',b:'Um'},
+  {t:'r',tab:'runes',c:'Runes',n:'Mal Rune',b:'Mal'},
+  {t:'r',tab:'runes',c:'Runes',n:'Ist Rune',b:'Ist'},
+  {t:'r',tab:'runes',c:'Runes',n:'Gul Rune',b:'Gul'},
+  {t:'r',tab:'runes',c:'Runes',n:'Vex Rune',b:'Vex'},
+  {t:'r',tab:'runes',c:'Runes',n:'Ohm Rune',b:'Ohm'},
+  {t:'r',tab:'runes',c:'Runes',n:'Lo Rune',b:'Lo'},
+  {t:'r',tab:'runes',c:'Runes',n:'Sur Rune',b:'Sur'},
+  {t:'r',tab:'runes',c:'Runes',n:'Ber Rune',b:'Ber'},
+  {t:'r',tab:'runes',c:'Runes',n:'Jah Rune',b:'Jah'},
+  {t:'r',tab:'runes',c:'Runes',n:'Cham Rune',b:'Cham'},
+  {t:'r',tab:'runes',c:'Runes',n:'Zod Rune',b:'Zod'}
+);
