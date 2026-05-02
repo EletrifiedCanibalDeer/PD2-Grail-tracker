@@ -116,6 +116,10 @@ Based on PD2 **Season 13 — Betrayal**. Item data sourced from the [Project Dia
 - Incognito mode won't persist between sessions
 - Google Fonts (DM Sans) requires an internet connection; the build script removes the font link for offline use
 
+## Disclaimer
+
+This project was built with assistance from Claude (AI). This is my first personal project using GitHub, so there may be rough edges. If you encounter issues or have suggestions, please open an issue and I'll do my best to address them.
+
 ## License
 
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
