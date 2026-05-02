@@ -5,13 +5,13 @@ Track your Project Diablo 2 Holy Grail progress. Click items as you find them, w
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/Weapons.png" alt="Weapons Tab" width="45%">
-  <img src="screenshots/Armor.png" alt="Armor Tab" width="45%">
+  <img src="Screenshots/Weapons.png" alt="Weapons Tab" width="45%">
+  <img src="Screenshots/Armor.png" alt="Armor Tab" width="45%">
 </p>
 
 <p align="center">
-  <img src="screenshots/Runewords.png" alt="Runewords Tab" width="45%">
-  <img src="screenshots/Set items.png" alt="Set Items Tab" width="45%">
+  <img src="Screenshots/Runewords.png" alt="Runewords Tab" width="45%">
+  <img src="Screenshots/Set items.png" alt="Set Items Tab" width="45%">
 </p>
 
 ## What's this?
