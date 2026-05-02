@@ -24,19 +24,25 @@ The "Holy Grail" is finding every unique item, set item, runeword, rune, charm, 
 
 ## How to use
 
+### Quick Start (Standalone)
+
+**Don't want to clone the repo?** Download the latest `pd2-grail-tracker-v[version].html` file from the [Releases](https://github.com/EletrifiedCanibalDeer/PD2-Grail-tracker/releases) page and open it in your browser. Everything works offline in a single file.
+
+### Development
+
 Open `grail-tracker/index.html` in your browser. Click items when you find them. That's it.
 
 The controls at the top let you filter by found/missing and by tier. Search works across all tabs. Your progress saves automatically — but export a backup occasionally (burger menu → Export), browser data can get wiped.
 
-### Sharing
+### Building the Standalone File
 
-To share the tracker with someone else (without them needing the full repo):
+To create a single self-contained HTML file:
 
+```bash
+npm run build
 ```
-node build.js
-```
 
-This produces `pd2-grail-tracker.html` — a single self-contained file they can open in any browser.
+This produces `pd2-grail-tracker-[version].html` — a standalone file that bundles all CSS, JavaScript, and data. Perfect for sharing or offline use.
 
 ### Re-enabling the editor
 
