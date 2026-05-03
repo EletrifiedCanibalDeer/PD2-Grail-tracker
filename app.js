@@ -2,7 +2,7 @@
 function transformCategory(item) { return item.c; }
 
 // ── VERSION ──
-window.GRAIL_VERSION = 'v1.1';
+window.GRAIL_VERSION = 'v1.2';
 window.GRAIL_SEASON = 'S13 · Betrayal';
 
 const DATA_KEY = 'pd2grail_data_v1';
@@ -36,12 +36,23 @@ function groupData(){
     map.get(key).items.push({ ...item, id: i });
   });
   const groups = Array.from(map.values());
+  
+  // Sort by tab first (using TABS order), then by category label within each tab
+  const TABS = ['weapons','armor','jewelry','sets','runewords','runes'];
   groups.sort((a, b) => {
+    // First sort by tab using TABS array order
+    const aTabIndex = TABS.indexOf(a.tab);
+    const bTabIndex = TABS.indexOf(b.tab);
+    const tabDiff = aTabIndex - bTabIndex;
+    if (tabDiff !== 0) return tabDiff;
+    
+    // Then sort by category label within the same tab
     let aKey = a.label, bKey = b.label;
     if (aKey.startsWith('1h ') || aKey.startsWith('2h ')) aKey = aKey.substring(3);
     if (bKey.startsWith('1h ') || bKey.startsWith('2h ')) bKey = bKey.substring(3);
     return aKey.localeCompare(bKey);
   });
+  
   return groups;
 }
 
@@ -224,7 +235,7 @@ function applyFilter(){
   
   // Show dividers for first visible section of each tab (after determining visibility)
   if(searching) {
-    tabSeen.clear();
+    const tabSeen = new Set();
     document.querySelectorAll('.section').forEach(sec=>{
       const secTab = sec.dataset.tab;
       const divider = sec.querySelector('.search-divider');
