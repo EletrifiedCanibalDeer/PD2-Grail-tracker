@@ -1,4 +1,10 @@
 // build.js — bundles source files into a single shareable HTML file
+// 
+// This script reads index.html and inlines all CSS and JavaScript files.
+// It works with the consolidated grail-data.js file (created by consolidate-data.js).
+//
+// Usage: npm run build
+//
 const fs = require('fs');
 const path = require('path');
 

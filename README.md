@@ -2,6 +2,8 @@
 
 Track your Project Diablo 2 Holy Grail progress. Click items as you find them, watch the bars fill up, try not to cry when Tyrael's Might never drops.
 
+**[Use the Tracker](https://eletrifiedcanibaldeer.github.io/PD2-Grail-tracker/)** | [Download Offline Version](https://github.com/EletrifiedCanibalDeer/PD2-Grail-tracker/releases)
+
 ## Screenshots
 
 <p align="center">
@@ -40,6 +42,10 @@ The "Holy Grail" is finding every unique item, set item, runeword, rune, charm, 
 
 **Don't want to clone the repo?** Download the latest `pd2-grail-tracker-v[version].html` file from the [Releases](https://github.com/EletrifiedCanibalDeer/PD2-Grail-tracker/releases) page and open it in your browser. Everything works offline in a single file.
 
+### Online Version
+
+Visit **[eletrifiedcanibaldeer.github.io/PD2-Grail-tracker](https://eletrifiedcanibaldeer.github.io/PD2-Grail-tracker/)** to use the tracker directly in your browser. Your progress is saved locally in your browser's storage - no account needed, no data sent to any server.
+
 ### Development
 
 Open `index.html` in your browser. Click items when you find them. That's it.
@@ -56,6 +62,17 @@ npm run build
 
 This produces `pd2-grail-tracker-[version].html` — a standalone file that bundles all CSS, JavaScript, and data. Perfect for sharing or offline use.
 
+### GitHub Pages
+
+This tracker is hosted on GitHub Pages and served directly from the repository root. To set up your own:
+
+1. Go to your repository Settings → Pages
+2. Set Source to "Deploy from a branch"
+3. Select branch: `main` (or `master`) and folder: `/ (root)`
+4. Save and wait a few minutes for deployment
+
+Your tracker will be live at `https://[username].github.io/[repo-name]/`
+
 ### Re-enabling the editor
 
 The inline data editor is kept in `editor/editor.js` but not loaded by default. See `editor/README.md` for instructions.
@@ -67,33 +84,17 @@ Any modern browser (Chrome, Firefox, Safari, Edge). Requires localStorage and ES
 ## File structure
 
 ```
-Root (source files):
+Root (application files):
   ├─ index.html                # main HTML structure
   ├─ styles.css                # all styling
   ├─ app.js                    # application logic
-  ├─ grail-data.js             # RAW_DATA array initialiser
-  ├─ grail-data-weapons.js     # unique weapons
-  ├─ grail-data-armor.js       # unique armor
-  ├─ grail-data-jewelry.js     # unique jewelry (rings, amulets)
-  ├─ grail-data-sets.js        # set items
-  ├─ grail-data-runewords.js   # runewords (107)
-  ├─ grail-data-runes.js       # runes El–Zod (33)
-  ├─ grail-data-charms.js      # unique charms (Anni, Torch, Gheed)
-  ├─ grail-data-jewels.js      # Rainbow Facets
-  └─ grail-data-misc.js        # misc unique items
+  ├─ grail-data.js             # consolidated item data with regions
+  ├─ build.js                  # bundles into standalone HTML
+  ├─ consolidate-data.js       # merges data files (if needed)
+  └─ package.json              # project metadata & scripts
 
-docs/                          # published version (GitHub Pages)
-editor/
-  ├─ editor.js                 # inline data editor (optional)
-  └─ README.md                 # re-enable instructions
-
-docs-project-notes/
-  ├─ backlog.md                # todo list and roadmap
-  ├─ SPECIAL_DROPS.md          # special drop source reference
-  ├─ DATA_STRUCTURE.md         # data format documentation
-  └─ REFACTORING_NOTES.md      # refactoring history
-
-build.js                       # bundles source files into one HTML file
+Screenshots/                   # screenshots for README
+editor/                        # optional inline data editor
 ```
 
 ## Data

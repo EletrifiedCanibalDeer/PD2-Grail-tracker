@@ -1,10 +1,12 @@
 # Built files (uploaded to releases separately)
 pd2-grail-tracker-v*.html
 
+# Private project notes (local only)
+docs/
+
 # Source data and extraction tools (one-time use, served their purpose)
 Sources/
 Extracted/
-tools/
 
 # Optional editor (not loaded by default)
 editor/
