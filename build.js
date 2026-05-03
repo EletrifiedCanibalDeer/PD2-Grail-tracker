@@ -13,7 +13,13 @@ const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 const version = pkg.version;
 
 const SRC = '.';
-const OUT = `pd2-grail-tracker-v${version}.html`;
+const DIST = 'standalone';
+const OUT = path.join(DIST, `pd2-grail-tracker-v${version}.html`);
+
+// Create standalone folder if it doesn't exist
+if (!fs.existsSync(DIST)) {
+  fs.mkdirSync(DIST);
+}
 
 // Read the index.html
 let html = fs.readFileSync(path.join(SRC, 'index.html'), 'utf8');

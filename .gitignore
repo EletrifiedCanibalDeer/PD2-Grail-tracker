@@ -1,5 +1,5 @@
 # Built files (uploaded to releases separately)
-pd2-grail-tracker-v*.html
+standalone/
 
 # Private project notes (local only)
 docs/

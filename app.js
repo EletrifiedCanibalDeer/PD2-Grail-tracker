@@ -219,16 +219,28 @@ function applyFilter(){
       if(show) anyVisible=true;
     });
     sec.classList.toggle('empty',!anyVisible);
-    if(divider){
-      if(searching && anyVisible && !tabSeen.has(secTab)){
-        divider.style.display='flex';
-        tabSeen.add(secTab);
-      } else {
-        divider.style.display='none';
-      }
-    }
     if(anyVisible) sec.classList.add('open');
   });
+  
+  // Show dividers for first visible section of each tab (after determining visibility)
+  if(searching) {
+    tabSeen.clear();
+    document.querySelectorAll('.section').forEach(sec=>{
+      const secTab = sec.dataset.tab;
+      const divider = sec.querySelector('.search-divider');
+      const isEmpty = sec.classList.contains('empty');
+      if(divider){
+        if(!isEmpty && !tabSeen.has(secTab)){
+          divider.style.display='flex';
+          tabSeen.add(secTab);
+        } else {
+          divider.style.display='none';
+        }
+      }
+    });
+  } else {
+    document.querySelectorAll('.search-divider').forEach(d => d.style.display = 'none');
+  }
 }
 
 function clearSearch(){
