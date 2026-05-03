@@ -42,7 +42,7 @@ The "Holy Grail" is finding every unique item, set item, runeword, rune, charm, 
 
 ### Development
 
-Open `docs/index.html` in your browser. Click items when you find them. That's it.
+Open `index.html` in your browser. Click items when you find them. That's it.
 
 The controls at the top let you filter by found/missing and by tier. Search works across all tabs. Your progress saves automatically — but export a backup occasionally (burger menu → Export), browser data can get wiped.
 
@@ -67,7 +67,7 @@ Any modern browser (Chrome, Firefox, Safari, Edge). Requires localStorage and ES
 ## File structure
 
 ```
-docs/
+Root (source files):
   ├─ index.html                # main HTML structure
   ├─ styles.css                # all styling
   ├─ app.js                    # application logic
@@ -82,7 +82,7 @@ docs/
   ├─ grail-data-jewels.js      # Rainbow Facets
   └─ grail-data-misc.js        # misc unique items
 
-grail-tracker/                 # source files (same as docs/)
+docs/                          # published version (GitHub Pages)
 editor/
   ├─ editor.js                 # inline data editor (optional)
   └─ README.md                 # re-enable instructions
@@ -93,9 +93,7 @@ docs-project-notes/
   ├─ DATA_STRUCTURE.md         # data format documentation
   └─ REFACTORING_NOTES.md      # refactoring history
 
-Sources/                       # raw HTML pages from PD2 wiki
-Extracted/                     # intermediate extracted JSON + JS files
-build.js                       # bundles grail-tracker/ into one HTML file
+build.js                       # bundles source files into one HTML file
 ```
 
 ## Data

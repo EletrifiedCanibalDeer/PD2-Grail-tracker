@@ -1,4 +1,4 @@
-// build.js — bundles grail-tracker/ into a single shareable HTML file
+// build.js — bundles source files into a single shareable HTML file
 const fs = require('fs');
 const path = require('path');
 
@@ -6,7 +6,7 @@ const path = require('path');
 const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 const version = pkg.version;
 
-const SRC = 'grail-tracker';
+const SRC = '.';
 const OUT = `pd2-grail-tracker-v${version}.html`;
 
 // Read the index.html
