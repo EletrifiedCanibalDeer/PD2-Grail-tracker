@@ -1,16 +1,17 @@
-# Exclude everything in root except whitelisted items
-/*
-# Whitelist specific folders
-!/grail-tracker/
-!/Screenshots/
-# Whitelist specific files
-!/.gitignore
-!/README.md
-!/package.json
-!/build.js
-
-# Explicitly ignore built HTML files
+# Built files (uploaded to releases separately)
 pd2-grail-tracker-v*.html
+
+# Source data and extraction tools (one-time use, served their purpose)
+Sources/
+Extracted/
+tools/
+
+# Optional editor (not loaded by default)
+editor/
+
+# IDE-specific settings
+.kiro/
+.vscode/
 
 # Node modules
 node_modules/
@@ -21,8 +22,6 @@ Thumbs.db
 desktop.ini
 
 # IDE and editor files
-.vscode/
-.idea/
 *.swp
 *.swo
 *~
