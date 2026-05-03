@@ -8,13 +8,8 @@ Track your Project Diablo 2 Holy Grail progress. Click items as you find them, w
 
 <p align="center">
   <img src="Screenshots/Weapons.png" alt="Weapons Tab" width="95%">
-
 </p>
 
-<p align="center">
-  <img src="Screenshots/Runewords.png" alt="Runewords Tab" width="90%">
-
-</p>
 
 ## What's this?
 
