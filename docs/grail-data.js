@@ -1,3 +1,0 @@
-window.RAW_DATA = [
-
-];
