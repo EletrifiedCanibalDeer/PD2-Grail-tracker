@@ -2,7 +2,7 @@
 function transformCategory(item) { return item.c; }
 
 // ── VERSION ──
-window.GRAIL_VERSION = 'v1.0';
+window.GRAIL_VERSION = 'v1.1';
 window.GRAIL_SEASON = 'S13 · Betrayal';
 
 const DATA_KEY = 'pd2grail_data_v1';
@@ -201,8 +201,17 @@ function applyFilter(){
     sec.querySelectorAll('.card').forEach(card=>{
       const isFnd = found.has(+card.dataset.id);
       const cardTier = card.dataset.tier || '';
+      const itemId = +card.dataset.id;
+      const itemData = DATA[itemId];
       let show = true;
-      if(q && !card.dataset.name.includes(q)) show=false;
+      // Search matches: item name OR base type OR runes OR source
+      if(q) {
+        const nameMatch = card.dataset.name.includes(q);
+        const baseMatch = itemData.b.toLowerCase().includes(q);
+        const runesMatch = itemData.runes && itemData.runes.toLowerCase().includes(q);
+        const sourceMatch = itemData.src && itemData.src.toLowerCase().includes(q);
+        if(!nameMatch && !baseMatch && !runesMatch && !sourceMatch) show=false;
+      }
       if(activeFilter==='found' && !isFnd) show=false;
       if(activeFilter==='missing' && isFnd) show=false;
       if(activeTier !== 'all' && cardTier !== activeTier) show=false;

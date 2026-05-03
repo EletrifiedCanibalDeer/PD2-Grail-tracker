@@ -81,6 +81,7 @@ h1 span{color:var(--c-weapons)}
 .menu-item:hover{background:var(--bg-2);color:var(--text)}
 .menu-item.danger{color:var(--text-3)}
 .menu-item.danger:hover{background:rgba(248,113,113,.08);color:var(--danger)}
+.menu-link{text-decoration:none}
 .menu-divider{height:1px;background:var(--border);margin:4px 0}
 .menu-version{padding:8px 16px;font-size:10px;font-family:'DM Mono',monospace;color:var(--text-3);text-align:center;user-select:none}
 
